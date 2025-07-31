@@ -99,15 +99,25 @@ export default function Login({ navigation }) {
           <Text style={styles.botaoTexto}>Login</Text>
         </TouchableOpacity>
 
+        <TouchableOpacity onPress={() => navigation.navigate('Noticias')}>
+          <Text style={styles.visitorButton}>Entrar como visitante</Text>
+        </TouchableOpacity>
+
         <View style={styles.divisor}>
           <View style={styles.linha} />
           <Text style={styles.ou}>Ou login com</Text>
           <View style={styles.linha} />
         </View>
 
-        <TouchableOpacity style={styles.googleBtn}>
-          <GoogleIcon width={20} height={20} />
-        </TouchableOpacity>
+        <TouchableOpacity
+  style={styles.googleBtn}
+  onPress={() => navigation.navigate('Noticias')}
+>
+  <Text style={{ color: '#3366FF', fontWeight: 'bold', fontFamily: 'Rubik', fontSize: 15 }}>
+    Entrar como visitante
+  </Text>
+</TouchableOpacity>
+
 
         <View style={styles.registroContainer}>
           <Text style={styles.registroTexto}>Não tem uma conta ainda? </Text>

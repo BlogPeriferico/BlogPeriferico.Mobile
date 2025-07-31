@@ -122,4 +122,13 @@ export const styles = StyleSheet.create({
     color: '#ccc',
     marginTop: 16,
   },
+    visitorButton: {
+    marginTop: 12,
+    color: '#0',
+    fontFamily: 'Rubik',
+    fontSize: 16,
+    textAlign: 'center',
+    textDecorationLine: 'underline',
+  },
+
 });
